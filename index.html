@@ -1,14 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Sanchez - Portfolio Personal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/css/styles.css">
+  <link rel="stylesheet" href="./public/css/header.css">
+  <link rel="stylesheet" href="./public/css/footer.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <title>Portfolio Personal - James Sanchez</title>
 </head>
 <body>
-    <main>
-        <h1>James Sanchez</h1>
-        <p>Desarrollador Web</p>
-    </main>
+  <!-- Contenedor para el Header -->
+  <!-- <div data-include-html="./public/components/header.html"></div> -->
+
+  <!-- Menu -->
+  <div class="container-maintained"> <!-- Contenedor de cinta -->
+
+    <nav class="options"> <!-- Cinta -->
+
+      <div class="container-icon"> <!-- Espacio de icono -->
+        <a class="frame-icon" href="./index.html">
+          <!-- Recurso del icono -->
+          <img src="./public/assets/home.svg" alt="Inicio" title="Inicio">
+        </a> <!-- Cuerpo de iconos -->
+      </div>
+
+      <div class="container-icon">
+        <a class="frame-icon" href="#" alt="Proyectos">
+          <img src="./public/assets/projects.svg" alt="Proyectos" title="Proyectos">
+        </a>
+      </div>
+
+      <div class="container-icon">
+        <a class="frame-icon" href="#" alt="Trabajo">
+          <img src="./public/assets/work.svg" alt="Trabajo" title="Trabajos">
+        </a>
+      </div>
+      
+      <div class="container-icon">
+        <a class="frame-icon" href="#" alt="Premium Tools" title="Premium Tools">
+          <img src="./public/assets/tools.svg" alt="Herramientas">
+        </a>
+      </div>
+
+    </nav>
+
+  </div>
+
+  <main>
+    <div class="container">
+      <img src="./public/images/profile picture.jpg" class="profile-picture" alt="Foto de perfil de James Sanchez">
+      <h1 class="name">James Sanchez</h1>
+    </div>
+
+    <!-- Section Main -->
+    <section class="section-main">
+
+      <h2 class="subtitle-main">Sobre mí</h2>
+      <p class="paragraph">
+        He brindado servicios de recuperación de datos, hospedaje e instalación de servidores para pequeñas empresas, además de soluciones en infraestructura de redes. Actualmente, me especializo en Desarrollo Web, buscando nuevos desafíos y oportunidades de crecimiento.
+      </p>
+
+    </section>
+    
+    <section class="sections">
+      <!-- Works - Tittle -->
+      <div class="container-design-title">
+
+        <h2 class="subtitle">Experiencia<br><span class="subtitles-component-span">Laboral</span></h2>
+
+      </div>
+
+      <!-- Works - Description -->
+      <div class="container-design-content">
+
+        <h2 class="title-work">
+          Líder en IT - GAON HOLDING
+        </h2>
+        <br>
+        <p class="paragraph">
+          Lideré la migración de servicios de Google a Microsoft 365, incluyendo correos electrónicos, mejorando la integración y colaboración. Configuré la red y el firewall de Fortinet, aplicando políticas de seguridad para proteger los datos. Recuperé datos y accedí a equipos de empleados despedidos, asegurando la retención de información crítica. Implementé la gestión de activos en el ERP (Odoo), centralizando la información y mejorando la trazabilidad, eliminando el uso de formatos en papel.
+        </p>
+        <br>
+        <p class="paragraph-date">
+          Agosto 2023 — Octubre 2023
+        </p>
+        
+      </div>
+
+      <div class="container-design-content">
+
+        <h2 class="title-work">
+          Soporte Técnico - PET CITY
+        </h2>
+        <br>
+        <p class="paragraph">
+          Gestioné la adquisición, instalación y configuración de equipos para los puntos de venta, asegurando que cumplieran con las necesidades específicas de la empresa. Instalé impresoras Honeywell y escáneres DigitalPersona para el registro eficiente de la entrada y salida del personal. Además, realicé la conexión y estructuración del cableado UTP para asegurar la conectividad y funcionalidad de todos los equipos.
+        </p>
+        <br>
+        <p class="paragraph-date">
+          Marzo 2023 — Junio 2023
+        </p>
+
+      </div>
+
+      <div class="container-design-content">
+
+        <h2 class="title-work">
+          SysAdmin - ECONOCOMEX
+        </h2>
+        <br>
+        <p class="paragraph">
+          Lideré varios proyectos clave, incluyendo la instalación y configuración de nuevos equipos Access Point de Ubiquiti para optimizar la red corporativa, mejorando la conectividad y el rendimiento. También configuré el servidor central con Windows Server 2019, implementando Active Directory para gestionar usuarios y recursos de manera eficiente. Además, ensamblé y desplegué equipos informáticos en las diferentes sucursales de la empresa, asegurando un entorno de trabajo homogéneo y eficiente.
+        </p>
+        <br>
+        <p class="paragraph-date">
+          Agosto 2021 — Diciembre 2022
+        </p>
+
+      </div>
+
+      <div class="container-design-content">
+
+        <h2 class="title-work">
+          SysAdmin - BR CORONA
+        </h2>
+        <br>
+        <p class="paragraph">
+          Lideré la implementación de un Centro de Datos (SITE) y la infraestructura de red. Adquirí e instalé un servidor Synology para su uso como sistema de archivos FTP, creando y gestionando cuentas con reglas específicas para cada usuario y grupo. Además, implementé un sistema de CCTV utilizando el software de Synology, proporcionando una solución de vigilancia robusta y confiable para la empresa.
+        </p>
+        <br>
+        <p class="paragraph-date">
+          Enero 2017 - Abril 2019
+        </p>
+
+      </div>
+      
+    </section>
+
+    <section class="sections">
+      <div class="container-design-title">
+        <h2 class="subtitle">Premium <br><span class="subtitles-component-span">Efficient</span></h2>
+      </div>
+
+      <h3 class="paragraph">Esta es la página principal de mi sitio web.</h3>
+
+    </section>
+    
+    <section class="sections">
+
+      <div class="container-design-title">
+        <h2 class="subtitle">Contacto <br><span class="subtitles-complement-span"></span></h2>
+        <p class="paragraph">Esta es la página principal de mi sitio web.</p>
+      </div>
+
+    </section>
+    
+  </main>
+
+  <div data-include-html="./public/components/footer.html"></div>
+
+  <!-- Importar el archivo de los componentes -->
+  <script src="./public/js/footer.js"></script>
+
 </body>
 </html>

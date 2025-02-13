@@ -1,0 +1,176 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    margin: 0 3rem 4.5rem 3rem;
+}
+
+.profile-picture {
+    display: block; /* Para aplicar márgenes automáticos en bloque */
+    width: 250px; /* Tamaño deseado */
+    height: 250px; /* Mantener la proporción */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+    margin: 0 auto; /* Centra la imagen */
+    box-shadow: 0px 5px 10px 0px rgba(52, 52, 52, 0.8); /* Borde con blur de 5px */
+}
+
+.section-main {
+    margin-top: 5rem;
+    width: 65%;
+    margin: auto;
+}
+
+/* Sections - General */
+.sections{
+    width: 65%;
+    margin: auto;
+    margin-top: 8rem;
+}
+
+
+/* Section Main */
+/* Name */
+.name {
+    margin: 3rem 0 10rem 0;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+
+/* Works - Tittle */
+.container-design-title {
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+/* Works - Description */
+.container-design-content {
+    background: rgb(30, 30, 30);
+    padding: 20px;
+    margin-bottom: 80px;
+    border-radius: 25px;
+}
+
+
+/* Inicio de Menú */
+
+/* Contenedor de cinta */
+.container-maintained {
+    display: flex;
+    width: auto;
+    background-color: gray;
+    justify-content: center;
+    background: transparent;
+}
+
+/* Cinta */
+.options {
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 35px 0;
+    border-radius: 18px;
+    gap: 40px;
+}
+
+/* Centrado de los iconos en el nav -> container-icon */
+.frame-icon {
+    display: flex;
+}
+
+
+/* Fin de menu */
+
+/* Works - Description */
+
+.title-work {
+    color: white;
+}
+
+/* Subtitle main - h2 */
+.subtitle-main {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.subtitle {
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+}
+
+/* Label - a */
+.paragraph {
+    text-align: justify;
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: white;
+}
+
+.paragraph-date {
+    text-align: right;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* Subtitles component */
+.subtitles-component {
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+}
+
+/* Label - span */
+.subtitles-component-span {
+    color: rgb(120, 120, 120);
+}
+
+/* Mobile */
+@media (width <= 768px) {
+
+    .name {
+        font-size: 2.2rem;
+        margin-bottom: 4rem;
+    }
+
+    /* Sections */
+    .sections, .section-main {
+        /* margin-top: 3rem; */
+        width: 95%;
+    }
+
+    .paragraph {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 0 1.5rem 4.5rem 1.5rem;
+    }
+    
+}
