@@ -1,0 +1,31 @@
+/* Propiedades del diseño general del footer */
+footer {
+    background-color: #444;
+    color: white;
+    /* margin-top: 2rem; */
+    padding: 0.7rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    Propiedades de la etiqueta que contiene referencias: como redes sociales
+    secciones de la página, etc. 
+*/
+
+.information {
+    font-size: 17px;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .information {
+        font-size: 14px;
+    }
+}
