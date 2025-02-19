@@ -16,10 +16,8 @@
   <title>Portfolio Personal - James Sanchez</title>
 </head>
 <body>
-  <!-- Contenedor para el Header -->
-  <!-- <div data-include-html="./public/components/header.html"></div> -->
 
-  <!-- Menu -->
+  <!-- Menu Header -->
   <div class="container-maintained"> <!-- Contenedor de cinta -->
 
     <nav class="options"> <!-- Cinta -->
@@ -144,21 +142,47 @@
       
     </section>
 
-    <section class="sections">
-      <div class="container-design-title">
-        <h2 class="subtitle">Premium <br><span class="subtitles-component-span">Efficient</span></h2>
-      </div>
-
-      <h3 class="paragraph">Esta es la página principal de mi sitio web.</h3>
-
-    </section>
-    
+    <!-- Contact -->
     <section class="sections">
 
       <div class="container-design-title">
-        <h2 class="subtitle">Contacto <br><span class="subtitles-complement-span"></span></h2>
-        <p class="paragraph">Esta es la página principal de mi sitio web.</p>
+        <h2 class="subtitle">Trabajemos <br><span class="subtitles-component-span">Juntos</span></h2>
       </div>
+
+      <form action="/enviar-formulario" method="post" class="contact">
+
+        <div class="form-container">
+
+          <div class="grid-name">
+            
+            <label class="lbl-form" for="name">Nombre</label> <br> <br>
+            <input class="input-name" type="text" id="name" name="name" placeholder="Tu nombre" required>
+          
+          </div>
+
+          <div class="grid-email">
+
+            <label class="lbl-form" for="email">Correo Electrónico</label> <br> <br>
+            <input class="input-email" type="email" id="email" name="email" cols="30" placeholder="Tu correo electrónico" required>
+
+          </div>
+
+          <div class="grid-message">
+
+            <label class="lbl-form" for="message">Mensaje</label> <br> <br>
+            <textarea class="txtarea-message" id="message" name="message" rows="10" cols="100%" maxlength="1000" placeholder="Escribe tu mensaje" required></textarea> <br> <br>
+            
+          </div>
+
+          <div class="grid-btn">
+            
+            <button class="btn-form" type="submit">Enviar</button>
+
+          </div>
+
+        </div>
+
+      </form>
 
     </section>
     

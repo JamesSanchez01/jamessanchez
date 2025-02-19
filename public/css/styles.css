@@ -105,6 +105,8 @@ main {
 
 /* Fin de menu */
 
+
+
 /* Works - Description */
 
 .title-work {
@@ -149,6 +151,94 @@ main {
 .subtitles-component-span {
     color: rgb(120, 120, 120);
 }
+
+
+/* Contact */
+
+.lbl-form {
+    font-size: 1rem;
+    color: white;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 80px 20px 15em 40px 10px;
+
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.grid-name {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+.input-name {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(50, 50, 50);
+    color: white;
+
+    width: 100%;
+}
+
+.grid-email {
+    grid-column: 6 / 10;
+    grid-row: 1 / 2;
+}
+
+.input-email {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+
+    width: 100%;
+}
+
+.grid-message {
+    grid-column: 1 / 10;
+    grid-row: 3 / 4;
+}
+
+.txtarea-message {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+
+    width: 100%;
+    resize: none;
+}
+
+.grid-btn {
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+}
+
+.btn-form {
+    margin: 5px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+
+    width: 100%;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease; 
+}
+
+.btn-form:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+
 
 /* Mobile */
 @media (width <= 768px) {
