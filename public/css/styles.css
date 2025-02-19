@@ -224,7 +224,7 @@ main {
     margin: 5px auto;
     padding: 8px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgb(70, 70, 70);
     color: white;
 
@@ -238,10 +238,18 @@ main {
     background-color: rgb(100, 100, 100);
 }
 
-
-
-/* Mobile */
+/* Tablet */
 @media (width <= 768px) {
+
+    /* Sections */
+    .sections, .section-main {
+        width: 85%;
+    }
+
+}
+
+/* Mobile M, L */
+@media (width <= 425px) {
 
     .name {
         font-size: 2.2rem;
@@ -250,7 +258,6 @@ main {
 
     /* Sections */
     .sections, .section-main {
-        /* margin-top: 3rem; */
         width: 95%;
     }
 
@@ -262,5 +269,34 @@ main {
     main {
         margin: 0 1.5rem 4.5rem 1.5rem;
     }
+
+    /* Contact */
+    .input-name, .input-email {
+        font-size: 0.75rem;
+    }
+
+    .txtarea-message {
+        font-size: 0.75rem;
+    }
     
+}
+
+/* Mobile S */
+@media (width <= 320px) {
+
+    /* Contact */
+    .lbl-form {
+        font-size: 0.85rem;
+    }
+
+    .input-name, .input-email {
+        font-size: 0.63rem;
+    }
+
+    .txtarea-message {
+        font-size: 0.63rem;
+
+        height: 170px;
+    }
+
 }
