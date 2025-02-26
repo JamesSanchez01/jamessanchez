@@ -92,7 +92,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    margin: 35px 0;
+    margin: 35px 0 60px 0;
     border-radius: 18px;
     gap: 40px;
 }
@@ -238,9 +238,53 @@ main {
     background-color: rgb(100, 100, 100);
 }
 
+/* Comprobación o Error de envió de correo */
+
+.successMessage {
+    color: #b1ff4a;
+    display: none;
+
+    text-align: center;
+    position: fixed; /* Fijado en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el div en la pantalla */
+    background: rgb(60, 60, 60); /* Fondo oscuro semi-transparente */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    width: auto;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0); /* Sombra */
+
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.errorMessage {
+    color: #fc5050;
+    display: none;
+
+    text-align: center;
+    position: fixed; /* Fijado en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el div en la pantalla */
+    background: rgb(60, 60, 60); /* Fondo oscuro semi-transparente */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    width: auto;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0); /* Sombra */
+
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
 /* Tablet */
 @media (width <= 768px) {
 
+    .name {
+        margin: 3rem 0 8rem 0;
+    }
+    
     /* Sections */
     .sections, .section-main {
         width: 85%;

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./public/css/styles.css">
-  <link rel="stylesheet" href="./public/css/header.css">
   <link rel="stylesheet" href="./public/css/footer.css">
 
   <!-- Fonts -->
@@ -30,20 +29,20 @@
       </div>
 
       <div class="container-icon">
-        <a class="frame-icon" href="#" alt="Proyectos">
-          <img src="./public/assets/projects.svg" alt="Proyectos" title="Proyectos">
-        </a>
-      </div>
-
-      <div class="container-icon">
-        <a class="frame-icon" href="#" alt="Trabajo">
-          <img src="./public/assets/work.svg" alt="Trabajo" title="Trabajos">
+        <a class="frame-icon" href="#experiencia" alt="Experiencia">
+          <img src="./public/assets/projects.svg" alt="Experiencia" title="Experiencia">
         </a>
       </div>
       
       <div class="container-icon">
-        <a class="frame-icon" href="#" alt="Premium Tools" title="Premium Tools">
+        <a class="frame-icon" href="#herramientas" alt="Herramientas" title="Herramientas">
           <img src="./public/assets/tools.svg" alt="Herramientas">
+        </a>
+      </div>
+
+      <div class="container-icon">
+        <a class="frame-icon" href="#trabajemos-juntos" alt="Trabajemos Juntos">
+          <img src="./public/assets/work.svg" alt="Trabajemos Juntos" title="Trabajemos Juntos">
         </a>
       </div>
 
@@ -71,7 +70,7 @@
       <!-- Works - Tittle -->
       <div class="container-design-title">
 
-        <h2 class="subtitle">Experiencia<br><span class="subtitles-component-span">Laboral</span></h2>
+        <h2 id="experiencia" class="subtitle">Experiencia<br><span class="subtitles-component-span">Laboral</span></h2>
 
       </div>
 
@@ -146,10 +145,10 @@
     <section class="sections">
 
       <div class="container-design-title">
-        <h2 class="subtitle">Trabajemos <br><span class="subtitles-component-span">Juntos</span></h2>
+        <h2 id="trabajemos-juntos" class="subtitle">Trabajemos <br><span class="subtitles-component-span">Juntos</span></h2>
       </div>
 
-      <form action="/enviar-formulario" method="post" class="contact">
+      <form id="contactForm" class="contact" action="http://127.0.0.1:8000/send-email/" method="post">
 
         <div class="form-container">
 
@@ -179,10 +178,14 @@
             <button class="btn-form" type="submit">Enviar</button>
 
           </div>
-
+          
         </div>
 
       </form>
+
+      <div id="successMessage" class="successMessage"></div>
+
+      <div id="errorMessage" class="errorMessage"></div>
 
     </section>
     
@@ -192,6 +195,7 @@
 
   <!-- Importar el archivo de los componentes -->
   <script src="./public/js/footer.js"></script>
+  <script src="/public/js/form.js"></script>
 
 </body>
 </html>
