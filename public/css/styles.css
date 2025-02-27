@@ -92,7 +92,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    margin: 35px 0;
+    margin: 35px 0 60px 0;
     border-radius: 18px;
     gap: 40px;
 }
@@ -104,6 +104,8 @@ main {
 
 
 /* Fin de menu */
+
+
 
 /* Works - Description */
 
@@ -150,8 +152,148 @@ main {
     color: rgb(120, 120, 120);
 }
 
-/* Mobile */
+
+/* Contact */
+
+.lbl-form {
+    font-size: 1rem;
+    color: white;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 80px 20px 15em 40px 10px;
+
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.grid-name {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+.input-name {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(50, 50, 50);
+    color: white;
+
+    width: 100%;
+}
+
+.grid-email {
+    grid-column: 6 / 10;
+    grid-row: 1 / 2;
+}
+
+.input-email {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+
+    width: 100%;
+}
+
+.grid-message {
+    grid-column: 1 / 10;
+    grid-row: 3 / 4;
+}
+
+.txtarea-message {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+
+    width: 100%;
+    resize: none;
+}
+
+.grid-btn {
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+}
+
+.btn-form {
+    margin: 5px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+
+    width: 100%;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease; 
+}
+
+.btn-form:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+/* Comprobación o Error de envió de correo */
+
+.successMessage {
+    color: #b1ff4a;
+    display: none;
+
+    text-align: center;
+    position: fixed; /* Fijado en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el div en la pantalla */
+    background: rgb(60, 60, 60); /* Fondo oscuro semi-transparente */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    width: auto;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0); /* Sombra */
+
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.errorMessage {
+    color: #fc5050;
+    display: none;
+
+    text-align: center;
+    position: fixed; /* Fijado en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el div en la pantalla */
+    background: rgb(60, 60, 60); /* Fondo oscuro semi-transparente */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    width: auto;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0); /* Sombra */
+
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Tablet */
 @media (width <= 768px) {
+
+    .name {
+        margin: 3rem 0 8rem 0;
+    }
+    
+    /* Sections */
+    .sections, .section-main {
+        width: 85%;
+    }
+
+}
+
+/* Mobile M, L */
+@media (width <= 425px) {
 
     .name {
         font-size: 2.2rem;
@@ -160,7 +302,6 @@ main {
 
     /* Sections */
     .sections, .section-main {
-        /* margin-top: 3rem; */
         width: 95%;
     }
 
@@ -172,5 +313,34 @@ main {
     main {
         margin: 0 1.5rem 4.5rem 1.5rem;
     }
+
+    /* Contact */
+    .input-name, .input-email {
+        font-size: 0.75rem;
+    }
+
+    .txtarea-message {
+        font-size: 0.75rem;
+    }
     
+}
+
+/* Mobile S */
+@media (width <= 320px) {
+
+    /* Contact */
+    .lbl-form {
+        font-size: 0.85rem;
+    }
+
+    .input-name, .input-email {
+        font-size: 0.63rem;
+    }
+
+    .txtarea-message {
+        font-size: 0.63rem;
+
+        height: 170px;
+    }
+
 }
