@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Deshabilita el botón para evitar múltiples envíos
         submitButton.disabled = true
 
-        fetch('http://127.0.0.1:8000/send-email/', {
+        fetch('https://jamessanchez01.github.io/send-email/', {
             method: 'POST',
             body: formData
         })
