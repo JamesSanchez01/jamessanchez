@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Deshabilita el botón para evitar múltiples envíos
         submitButton.disabled = true
 
-        fetch('https://jamessanchez01.github.io/send-email/', {
+        fetch('https://api-website.codemasters.com.mx/cvjames/send-email/', {
             method: 'POST',
             body: formData
         })

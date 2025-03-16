@@ -49,6 +49,12 @@ main {
     margin-top: 8rem;
 }
 
+.tool-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 8rem;
+}
+
 
 /* Section Main */
 /* Name */
@@ -153,6 +159,145 @@ main {
 }
 
 
+/* Tools */
+
+.container-tool {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+
+    margin: auto;
+    margin-top: 3rem;
+}
+
+/* Data Base - Grid */
+.grid-db {
+    grid-column: 3 / 7;
+    grid-row: 2 / 6;
+
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* HTML - Grid */
+.grid-html {
+    grid-column: 9 / 13;
+    grid-row: 1 / 5;
+
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* CSS - Grid */
+.grid-css {
+    grid-column: 15 / 19;
+    grid-row: 2 / 6;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* JS - Grid */
+.grid-js {
+    grid-column: 1 / 5;
+    grid-row: 7 / 11;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* GitHub - Grid */
+.grid-github {
+    grid-column: 9 / 13;
+    grid-row: 7 / 11;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Data Recovery - Grid */
+.grid-datarecovery {
+    grid-column: 17 / 21;
+    grid-row: 7 / 11;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Network - Grid */
+.grid-network {
+    grid-column: 3 / 7;
+    grid-row: 12 / 16;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* OS - Grid */
+.grid-os {
+    grid-column: 9 / 13;
+    grid-row: 13 / 17;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Virtual Machines -  */
+.grid-vm {
+    grid-column: 15 / 19;
+    grid-row: 12 / 16;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.lbl-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.frame-tool {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-db, .grid-html, .grid-css, .grid-js , .grid-github, .grid-datarecovery, .grid-network, .grid-os, .grid-vm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 95%;
+    border: 1px solid #000;
+
+}
+
+/* Size Image */
+.img-size {
+    max-width: 100%; /* La imagen no puede ser más ancha que el contenedor */
+    max-height: 100%; /* La imagen no puede ser más alta que el contenedor */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
+}
+
 /* Contact */
 
 .lbl-form {
@@ -160,13 +305,14 @@ main {
     color: white;
 }
 
-.form-container {
+.container-form {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 80px 20px 15em 40px 10px;
 
     margin: auto;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .grid-name {
@@ -278,6 +424,28 @@ main {
     font-size: 1rem;
 }
 
+/* Laptop */
+@media (width <= 1024px) {
+
+    .name {
+        margin: 3rem 0 8rem 0;
+    }
+
+    /* Sections */
+    .sections, .section-main {
+        width: 75%;
+    }
+
+    .lbl-text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+        font-size: 1.1rem;
+        color: black;
+    }
+
+}
+
 /* Tablet */
 @media (width <= 768px) {
 
@@ -290,6 +458,24 @@ main {
         width: 85%;
     }
 
+    .tool-section {
+        width: 95%;
+    }
+
+
+    .lbl-text.second-lbl {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    .img-size {
+        height: 90px;
+    }
+    
+
 }
 
 /* Mobile M, L */
@@ -298,6 +484,10 @@ main {
     .name {
         font-size: 2.2rem;
         margin-bottom: 4rem;
+    }
+
+    .title-work {
+        text-align: center;
     }
 
     /* Sections */
@@ -321,6 +511,19 @@ main {
 
     .txtarea-message {
         font-size: 0.75rem;
+    }
+
+    .container-tool {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-design-content {
+        margin-bottom: 40px;
     }
     
 }
