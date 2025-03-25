@@ -3,16 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Description y Keywords -->
+  <meta name="description" content="Ingeniero de Software enfocado en Desarrollo Web, Seguridad de Datos y Redes. Descubre soluciones tecnológicas eficientes y mi portfolio aquí.">
+  <meta name="keywords" content="James Sánchez, Ingeniero de Software, Desarrollo Web, Redes, Seguridad de Datos, SysAdmin, Docker, PostgreSQL, GitHub, Active Directory, Synology, CCTV, Windows Server">
+  <meta name="Author" content="James Sanchez">
+  <meta name="Robots" content="index, follow">
+
+  <!-- Title optimizado para SEO -->
+  <title>James Sánchez - Ingeniero de Software | Desarrollo Web</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio James Sánchez | Engineer Software">
+  <meta property="og:site_name" content="James Sánchez | Engineer Software">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:description" content="Ingeniero de Software enfocado en Desarrollo Web, Seguridad de Datos y Redes. Descubre soluciones tecnológicas eficientes y mi portfolio aquí.">
+  <meta property="og:image" content="https://jamessanchez01.github.io/image-website.svg">
+  <meta property="og:url" content="https://jamessanchez01.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portafolio de James Sánchez | Engineer Software">
+  <meta name="twitter:description" content="Ingeniero de Software enfocado en Desarrollo Web, Seguridad de Datos y Redes. Descubre soluciones tecnológicas eficientes y mi portfolio aquí.">
+  <meta name="twitter:image" content="https://jamessanchez01.github.io/image-website.svg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://jamessanchez01.github.io/">
+
+
+  <!-- Syles -->
   <link rel="stylesheet" href="./public/css/styles.css">
   <link rel="stylesheet" href="./public/css/footer.css">
+
+  <!-- Fav Icon -->
+  <link rel="icon" href="./public/images/favicon.png" type="image/x-icon">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
-  <title>Portfolio Personal - James Sanchez</title>
 </head>
 <body>
 
@@ -55,16 +85,39 @@
     <div class="container">
       <img src="./public/images/fotoPerfil.jpeg" class="profile-picture" alt="Foto de perfil de James Sanchez">
       <h1 class="name">James Sanchez</h1>
+
+      <!-- Engineer Software -->
+      <h1 class="profession">Engineer<br><span class="profession-1">Software</span></h1>
     </div>
+    
+    <section class="experience-section">
+      <!-- Detalle de Experiencia -->
+      <div class="experience-container">
+
+        <div class="experience-design">
+          <h1 class="years-experience">+5</h1>
+          <p class="description-work">Años de<br>Experiencia</p>
+        </div>
+  
+        <div class="experience-design">
+          <h1 class="years-experience">+3</h1>
+          <p class="description-work">Proyectos</p>
+        </div>
+
+        <div class="experience-design">
+          <h1 class="years-experience">+3</h1>
+          <p class="description-work">Clientes</p>
+        </div>
+
+      </div>      
+    </section>
 
     <!-- Section Main -->
     <section class="section-main">
 
       <h2 class="subtitle-main">Sobre mí</h2>
       <p class="paragraph">
-        Soy James Sánchez, Ingeniero de software con enfoque en Desarrollo Web (Jr), Redes y Ciberseguridad. Apasionado por la tecnología y la mejora continua, me mantengo en constante actualización para optimizar mi desempeño y aportar mayor valor a cada proyecto.
-
-        Me caracterizo por mi iniciativa, capacidad de aprendizaje, adaptabilidad y pensamiento analítico. Como profesional autodidacta, aplico estos valores en entornos empresariales, fomentando la comunicación, el respeto y la colaboración efectiva dentro de los equipos de trabajo.
+        Apasionado por crear soluciones tecnológicas intuitivas y atractivas. Enfocado en transformar desafíos complejos en sistemas eficientes y fáciles de usar, con enfoque en desarrollo web, redes y seguridad de datos.
       </p>
 
     </section>
@@ -73,11 +126,29 @@
       <!-- Works - Tittle -->
       <div class="container-design-title">
 
-        <h2 id="experiencia" class="subtitle">Experiencia<br><span class="subtitles-component-span">Laboral</span></h2>
+        <h2 id="experiencia" class="subtitle">Experiencia<span class="subtitles-component-span">Laboral</span></h2>
 
       </div>
 
       <!-- Works - Description -->
+      <div class="container-design-content">
+
+        <h2 class="title-work">
+          Freelancer
+        </h2>
+        <br>
+        <p class="paragraph">
+          Durante este tiempo, he ayudado a clientes a mantener su información segura con el alquiler de servidores para alojamiento de datos, he recuperado datos valiosos de unidades de almacenamiento y dado nueva vida a redes y equipos de cómputo mediante mantenimiento técnico especializado.
+
+          Cada proyecto que tomo es una nueva oportunidad para demostrar que la tecnología puede trabajar a tu favor. Porque mi misión es convertir problemas técnicos en soluciones simples y efectivas.
+        </p>
+        <br>
+        <p class="paragraph-date">
+          Abril 2019 — Actualidad
+        </p>
+        
+      </div>
+
       <div class="container-design-content">
 
         <h2 class="title-work">
@@ -148,7 +219,7 @@
     <section class="tool-section">
 
       <div class="container-design-title">
-        <h2 id="herramientas" class="subtitle">Herramientas</h2>
+        <h2 id="herramientas" class="subtitle">Herramientas<span class="subtitles-component-intermediate">&</span><span class="subtitles-component-span">Tecnologías</span></h2>
       </div>
 
       <div class="container-tool">
@@ -193,19 +264,19 @@
           </a>
         </div>
         
-        <!-- Data Recovery -- 2nd style --> 
-        <div class="grid-datarecovery">
-          <label class="lbl-text second-lbl">Recuperación de Datos</label>
+        <!-- Figma --> 
+        <div class="grid-figma">
+          <label class="lbl-text">Figma</label>
           <a class="frame-tool">
-            <img src="./public/assets/hdd.svg" alt="Recuperación de Datos" class="img-size"/>
+            <img src="./public/assets/figma.svg" alt="Figma" class="img-size"/>
           </a>
         </div>
 
-        <!-- Network -->
-        <div class="grid-network">
-          <label class="lbl-text">Redes</label>
+        <!-- Docker -->
+        <div class="grid-docker">
+          <label class="lbl-text">Docker</label>
           <a class="frame-tool">
-            <img src="./public/assets/network.svg" alt="Redes" class="img-size"/>
+            <img src="./public/assets/docker.svg" alt="Docker" class="img-size"/>
           </a>
         </div>
 

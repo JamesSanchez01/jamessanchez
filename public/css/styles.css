@@ -37,7 +37,6 @@ main {
 }
 
 .section-main {
-    margin-top: 5rem;
     width: 65%;
     margin: auto;
 }
@@ -59,17 +58,55 @@ main {
 /* Section Main */
 /* Name */
 .name {
-    margin: 3rem 0 10rem 0;
+    margin: 3rem 0 3rem 0;
     font-size: 2.5rem;
     color: white;
     text-align: center;
 }
 
+.profession {
+    color: white;
+    font-size: 5rem;
+}
+
+.experience-section {
+    margin: 1rem 0 5rem 0;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+}
+
+.experience-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.years-experience {
+    color: white;
+    font-size: 3rem;
+}
+
+.description-work {
+    color: rgb(180, 180, 180);
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+    /* margin: .5rem 0 .5rem 0; */
+    font-weight: bold;
+}
 
 /* Works - Tittle */
 .container-design-title {
     margin-bottom: 2rem;
-    border-radius: 20px;
 }
 
 /* Works - Description */
@@ -98,7 +135,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    margin: 35px 0 60px 0;
+    margin: 40px 0 60px 0;
     border-radius: 18px;
     gap: 40px;
 }
@@ -126,9 +163,13 @@ main {
 }
 
 .subtitle {
+    display: flex;
     font-size: 2.2rem;
     color: white;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Label - a */
@@ -154,8 +195,12 @@ main {
 }
 
 /* Label - span */
-.subtitles-component-span {
+.subtitles-component-span, .profession-1 {
     color: rgb(120, 120, 120);
+}
+
+.subtitles-component-intermediate {
+    color: rgb(175, 175, 175);
 }
 
 
@@ -220,8 +265,8 @@ main {
     padding: 10px;
 }
 
-/* Data Recovery - Grid */
-.grid-datarecovery {
+/* Figma - Grid */
+.grid-figma {
     grid-column: 17 / 21;
     grid-row: 7 / 11;
 
@@ -230,8 +275,8 @@ main {
     padding: 10px;
 }
 
-/* Network - Grid */
-.grid-network {
+/* Docker - Grid */
+.grid-docker {
     grid-column: 3 / 7;
     grid-row: 12 / 16;
 
@@ -279,7 +324,7 @@ main {
     align-items: center;
 }
 
-.grid-db, .grid-html, .grid-css, .grid-js , .grid-github, .grid-datarecovery, .grid-network, .grid-os, .grid-vm {
+.grid-db, .grid-html, .grid-css, .grid-js , .grid-github, .grid-figma, .grid-docker, .grid-os, .grid-vm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,11 +353,11 @@ main {
 .container-form {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 80px 20px 15em 40px 10px;
+    grid-template-rows: 80px 20px 15em 20px 40px;
 
     margin: auto;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .grid-name {
@@ -363,11 +408,11 @@ main {
 
 .grid-btn {
     grid-column: 4 / 7;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
 }
 
 .btn-form {
-    margin: 5px auto;
+    margin: 4px auto;
     padding: 8px;
     border: none;
     border-radius: 15px;
@@ -428,7 +473,7 @@ main {
 @media (width <= 1024px) {
 
     .name {
-        margin: 3rem 0 8rem 0;
+        margin: 3rem 0 3rem 0;
     }
 
     /* Sections */
@@ -450,7 +495,19 @@ main {
 @media (width <= 768px) {
 
     .name {
-        margin: 3rem 0 8rem 0;
+        margin: 3rem 0 3rem 0;
+    }
+
+    .description-work {
+        font-size: 1.2rem;
+    }
+
+    .profession {
+        font-size: 4rem;
+    }
+
+    .years-experience {
+        font-size: 3rem;
     }
     
     /* Sections */
@@ -460,15 +517,6 @@ main {
 
     .tool-section {
         width: 95%;
-    }
-
-
-    .lbl-text.second-lbl {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    
-        font-size: 1.1rem;
-        color: black;
     }
 
     .img-size {
@@ -481,6 +529,38 @@ main {
 /* Mobile M, L */
 @media (width <= 425px) {
 
+    .btn-form {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    
+    .experience-container {
+        gap: 2.3rem;  
+    }
+
+    .description-work {
+        font-size: 1.2rem;
+    }
+
+    .profession {
+        font-size: 3.5rem;
+    }
+
+    .years-experience {
+        font-size: 2.5rem;
+    }
+
+    .grid-name, .grid-email, .grid-message {
+        margin-bottom: 1rem;
+    }
+
     .name {
         font-size: 2.2rem;
         margin-bottom: 4rem;
@@ -491,6 +571,11 @@ main {
     }
 
     /* Sections */
+
+    .tool-section {
+        width: 60%;
+    }
+
     .sections, .section-main {
         width: 95%;
     }
@@ -505,12 +590,8 @@ main {
     }
 
     /* Contact */
-    .input-name, .input-email {
-        font-size: 0.75rem;
-    }
-
-    .txtarea-message {
-        font-size: 0.75rem;
+    .input-name, .input-email, .txtarea-message {
+        font-size: 0.9rem;
     }
 
     .container-tool {
@@ -531,19 +612,30 @@ main {
 /* Mobile S */
 @media (width <= 320px) {
 
-    /* Contact */
-    .lbl-form {
-        font-size: 0.85rem;
-    }
-
     .input-name, .input-email {
-        font-size: 0.63rem;
+        font-size: 0.9rem;
     }
 
     .txtarea-message {
-        font-size: 0.63rem;
+        font-size: 0.9rem;
 
         height: 170px;
+    }
+
+    .experience-container {
+        gap: 2rem;  
+    }
+
+    .description-work {
+        font-size: .9rem;
+    }
+
+    .profession {
+        font-size: 3rem;
+    }
+
+    .years-experience {
+        font-size: 2rem;
     }
 
 }
