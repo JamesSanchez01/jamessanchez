@@ -21,11 +21,6 @@ html, body {
     align-items: center;
 }
 
-main {
-    flex: 1;
-    margin: 0 3rem 4.5rem 3rem;
-}
-
 .profile-picture {
     display: block; /* Para aplicar márgenes automáticos en bloque */
     width: 250px; /* Tamaño deseado */
